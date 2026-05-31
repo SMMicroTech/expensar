@@ -84,7 +84,7 @@ final class MLKitExpenseAssistant {
                 return OCRPayload(text: "", confidence: 0)
             }
 
-            let observations = request.results as? [VNRecognizedTextObservation] ?? []
+            let observations = request.results ?? []
             var lines: [String] = []
             var confSum: Double = 0
             var confCount = 0

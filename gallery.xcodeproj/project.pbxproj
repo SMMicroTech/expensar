@@ -7,59 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F254EBA02FCA92E500ACBAAA /* galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EB9F2FCA92E500ACBAAA /* galleryApp.swift */; };
 		A10000000000000000000011 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* AppCore.swift */; };
 		A10000000000000000000012 /* AppViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* AppViews.swift */; };
 		A10000000000000000000013 /* MLKitExpenseAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000023 /* MLKitExpenseAssistant.swift */; };
-		S00100000000000000000014 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = S00100000000000000000020 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		S00100000000000000000011 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = S00100000000000000000021 /* ShareViewController.swift */; };
-		S00100000000000000000012 /* ShareExtension/Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = S00100000000000000000022 /* ShareExtension/Info.plist */; };
-		S00100000000000000000013 /* ShareExtension/ShareExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = S00100000000000000000023 /* ShareExtension/ShareExtension.entitlements */; };
+		B10000000000000000000011 /* gallery/Views/AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* gallery/Views/AddExpenseView.swift */; };
+		B10000000000000000000011B /* gallery/Views/AddExpenseFormSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021B /* gallery/Views/AddExpenseFormSections.swift */; };
+		B10000000000000000000012 /* gallery/Views/TemplatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* gallery/Views/TemplatePickerView.swift */; };
+		B10000000000000000000013 /* gallery/Views/ExpenseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* gallery/Views/ExpenseRowView.swift */; };
+		B10000000000000000000014 /* gallery/Views/ExpenseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* gallery/Views/ExpenseDetailsView.swift */; };
+		B10000000000000000000015 /* gallery/Views/ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000025 /* gallery/Views/ConfigView.swift */; };
+		B10000000000000000000016 /* gallery/Views/MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* gallery/Views/MetricCard.swift */; };
+		B10000000000000000000017 /* gallery/Views/ExpensesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000027 /* gallery/Views/ExpensesUI.swift */; };
+		B10000000000000000000018 /* gallery/Views/ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000028 /* gallery/Views/ReportsView.swift */; };
+		B10000000000000000000019 /* gallery/Views/YearlyWrapUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000029 /* gallery/Views/YearlyWrapUpView.swift */; };
+		F254EBA02FCA92E500ACBAAA /* galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EB9F2FCA92E500ACBAAA /* galleryApp.swift */; };
 		F254EBA22FCA92E500ACBAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EBA12FCA92E500ACBAAA /* ContentView.swift */; };
 		F254EBA42FCA92E600ACBAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F254EBA32FCA92E600ACBAAA /* Assets.xcassets */; };
 		F254EBA72FCA92E600ACBAAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F254EBA62FCA92E600ACBAAA /* Preview Assets.xcassets */; };
 		F254EBA92FCA92E600ACBAAA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EBA82FCA92E600ACBAAA /* Persistence.swift */; };
 		F254EBAC2FCA92E600ACBAAA /* gallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F254EBAA2FCA92E600ACBAAA /* gallery.xcdatamodeld */; };
-
-		B10000000000000000000011 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* Views/AddExpenseView.swift */; };
-		B10000000000000000000011B /* AddExpenseFormSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021B /* Views/AddExpenseFormSections.swift */; };
-		B10000000000000000000012 /* TemplatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* Views/TemplatePickerView.swift */; };
-		B10000000000000000000013 /* ExpenseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* Views/ExpenseRowView.swift */; };
-		B10000000000000000000014 /* ExpenseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* Views/ExpenseDetailsView.swift */; };
-		B10000000000000000000015 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000025 /* Views/ConfigView.swift */; };
-		B10000000000000000000016 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* Views/MetricCard.swift */; };
-		B10000000000000000000017 /* ExpensesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000027 /* Views/ExpensesUI.swift */; };
-		B10000000000000000000018 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000028 /* Views/ReportsView.swift */; };
-		B10000000000000000000019 /* YearlyWrapUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000029 /* Views/YearlyWrapUpView.swift */; };
+		S00100000000000000000011 /* ../ShareExtension/ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = S00100000000000000000021 /* ../ShareExtension/ShareViewController.swift */; };
+		S00100000000000000000014 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = S00100000000000000000020 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		S00100000000000000000070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F254EB942FCA92E500ACBAAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = S00100000000000000000041;
+			remoteInfo = ExpensarShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		S00100000000000000000033 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				S00100000000000000000014 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F254EB9C2FCA92E500ACBAAA /* gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		S00100000000000000000020 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F254EB9F2FCA92E500ACBAAA /* galleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryApp.swift; sourceTree = "<group>"; };
 		A10000000000000000000021 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		A10000000000000000000022 /* AppViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViews.swift; sourceTree = "<group>"; };
 		A10000000000000000000023 /* MLKitExpenseAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitExpenseAssistant.swift; sourceTree = "<group>"; };
+		B10000000000000000000021 /* gallery/Views/AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/AddExpenseView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000021B /* gallery/Views/AddExpenseFormSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/AddExpenseFormSections.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000022 /* gallery/Views/TemplatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/TemplatePickerView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000023 /* gallery/Views/ExpenseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/ExpenseRowView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000024 /* gallery/Views/ExpenseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/ExpenseDetailsView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000025 /* gallery/Views/ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/ConfigView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000026 /* gallery/Views/MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/MetricCard.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000027 /* gallery/Views/ExpensesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/ExpensesUI.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000028 /* gallery/Views/ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/ReportsView.swift; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000029 /* gallery/Views/YearlyWrapUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gallery/Views/YearlyWrapUpView.swift; sourceTree = SOURCE_ROOT; };
+		F254EB9C2FCA92E500ACBAAA /* gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F254EB9F2FCA92E500ACBAAA /* galleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryApp.swift; sourceTree = "<group>"; };
 		F254EBA12FCA92E500ACBAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F254EBA32FCA92E600ACBAAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F254EBA62FCA92E600ACBAAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F254EBA82FCA92E600ACBAAA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		S00100000000000000000021 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../ShareExtension/ShareViewController.swift; sourceTree = "<group>"; };
-		S00100000000000000000022 /* ShareExtension/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../ShareExtension/Info.plist; sourceTree = "<group>"; };
-		S00100000000000000000023 /* ShareExtension/ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../ShareExtension/ShareExtension.entitlements; sourceTree = "<group>"; };
-		S00100000000000000000024 /* Entitlements/App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements/App.entitlements; sourceTree = "<group>"; };
 		F254EBAB2FCA92E600ACBAAA /* gallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gallery.xcdatamodel; sourceTree = "<group>"; };
-
-		B10000000000000000000021 /* Views/AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/AddExpenseView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000021B /* Views/AddExpenseFormSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/AddExpenseFormSections.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000022 /* Views/TemplatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/TemplatePickerView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000023 /* Views/ExpenseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/ExpenseRowView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000024 /* Views/ExpenseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/ExpenseDetailsView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000025 /* Views/ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/ConfigView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000026 /* Views/MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/MetricCard.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000027 /* Views/ExpensesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/ExpensesUI.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000028 /* Views/ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/ReportsView.swift"; sourceTree = SOURCE_ROOT; };
-		B10000000000000000000029 /* Views/YearlyWrapUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gallery/Views/YearlyWrapUpView.swift"; sourceTree = SOURCE_ROOT; };
+		S00100000000000000000020 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShareExtension.appex; path = ExpensarShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		S00100000000000000000021 /* ../ShareExtension/ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../ShareExtension/ShareViewController.swift; sourceTree = "<group>"; };
+		S00100000000000000000022 /* ../ShareExtension/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../ShareExtension/Info.plist; sourceTree = "<group>"; };
+		S00100000000000000000023 /* ../ShareExtension/ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../ShareExtension/ShareExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F254EB992FCA92E500ACBAAA /* Frameworks */ = {
@@ -69,26 +89,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
-		S00100000000000000000033 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			name = "Embed App Extensions";
-			files = (
-				S00100000000000000000014 /* ShareExtension.appex in Embed App Extensions */,
-			);
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2439E602FCBE36200449592 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000021B /* gallery/Views/AddExpenseFormSections.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		F254EB932FCA92E500ACBAAA = {
 			isa = PBXGroup;
 			children = (
 				F254EB9E2FCA92E500ACBAAA /* gallery */,
 				F254EB9D2FCA92E500ACBAAA /* Products */,
+				F2439E602FCBE36200449592 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,17 +131,17 @@
 				F254EBAA2FCA92E600ACBAAA /* gallery.xcdatamodeld */,
 				F254EBA52FCA92E600ACBAAA /* Preview Content */,
 				S00100000000000000000001 /* ShareExtension */,
-				B10000000000000000000021 /* Views/AddExpenseView.swift */,
-				B10000000000000000000022 /* Views/TemplatePickerView.swift */,
-				B10000000000000000000023 /* Views/ExpenseRowView.swift */,
-				B10000000000000000000024 /* Views/ExpenseDetailsView.swift */,
-				B10000000000000000000025 /* Views/ConfigView.swift */,
-				B10000000000000000000026 /* Views/MetricCard.swift */,
-				B10000000000000000000027 /* Views/ExpensesUI.swift */,
-				B10000000000000000000028 /* Views/ReportsView.swift */,
-				B10000000000000000000029 /* Views/YearlyWrapUpView.swift */,
+				B10000000000000000000021 /* gallery/Views/AddExpenseView.swift */,
+				B10000000000000000000022 /* gallery/Views/TemplatePickerView.swift */,
+				B10000000000000000000023 /* gallery/Views/ExpenseRowView.swift */,
+				B10000000000000000000024 /* gallery/Views/ExpenseDetailsView.swift */,
+				B10000000000000000000025 /* gallery/Views/ConfigView.swift */,
+				B10000000000000000000026 /* gallery/Views/MetricCard.swift */,
+				B10000000000000000000027 /* gallery/Views/ExpensesUI.swift */,
+				B10000000000000000000028 /* gallery/Views/ReportsView.swift */,
+				B10000000000000000000029 /* gallery/Views/YearlyWrapUpView.swift */,
 			);
-			path = gallery; 
+			path = gallery;
 			sourceTree = "<group>";
 		};
 		F254EBA52FCA92E600ACBAAA /* Preview Content */ = {
@@ -138,11 +155,11 @@
 		S00100000000000000000001 /* ShareExtension */ = {
 			isa = PBXGroup;
 			children = (
-				S00100000000000000000021 /* ShareViewController.swift */,
-				S00100000000000000000022 /* ShareExtension/Info.plist */,
-				S00100000000000000000023 /* ShareExtension/ShareExtension.entitlements */,
+				S00100000000000000000021 /* ../ShareExtension/ShareViewController.swift */,
+				S00100000000000000000022 /* ../ShareExtension/Info.plist */,
+				S00100000000000000000023 /* ../ShareExtension/ShareExtension.entitlements */,
 			);
-			path = "ShareExtension";
+			path = ShareExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +177,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				S00100000000000000000071 /* ExpensarShare */,
+				S00100000000000000000071 /* PBXTargetDependency */,
 			);
 			name = gallery;
 			productName = gallery;
@@ -171,9 +188,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = S00100000000000000000051 /* Build configuration list for PBXNativeTarget "ExpensarShare" */;
 			buildPhases = (
-				S00100000000000000000031 /* ShareExtension Sources */,
+				S00100000000000000000031 /* Sources */,
 				F254EB992FCA92E500ACBAAA /* Frameworks */,
-				S00100000000000000000032 /* ShareExtension Resources */,
+				S00100000000000000000032 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,20 +200,6 @@
 			productName = ExpensarShare;
 			productReference = S00100000000000000000020 /* ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-
-		S00100000000000000000070 /* ExpensarShare Proxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F254EB942FCA92E500ACBAAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = S00100000000000000000041 /* ExpensarShare */;
-			remoteInfo = ExpensarShare;
-		};
-
-		S00100000000000000000071 /* ExpensarShare */ = {
-			isa = PBXTargetDependency;
-			target = S00100000000000000000041 /* ExpensarShare */;
-			targetProxy = S00100000000000000000070 /* ExpensarShare Proxy */;
 		};
 /* End PBXNativeTarget section */
 
@@ -242,8 +245,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
-		/* removed duplicate ShareExtension product file reference */
+		S00100000000000000000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,38 +266,36 @@
 				F254EBA92FCA92E600ACBAAA /* Persistence.swift in Sources */,
 				F254EBA22FCA92E500ACBAAA /* ContentView.swift in Sources */,
 				F254EBA02FCA92E500ACBAAA /* galleryApp.swift in Sources */,
-
-				B10000000000000000000011 /* AddExpenseView.swift in Sources */,
-		B10000000000000000000011B /* AddExpenseFormSections.swift in Sources */,
-				B10000000000000000000012 /* TemplatePickerView.swift in Sources */,
-				B10000000000000000000013 /* ExpenseRowView.swift in Sources */,
-				B10000000000000000000014 /* ExpenseDetailsView.swift in Sources */,
-				B10000000000000000000015 /* ConfigView.swift in Sources */,
-				B10000000000000000000016 /* MetricCard.swift in Sources */,
-				B10000000000000000000017 /* ExpensesUI.swift in Sources */,
-				B10000000000000000000018 /* ReportsView.swift in Sources */,
-				B10000000000000000000019 /* YearlyWrapUpView.swift in Sources */,
+				B10000000000000000000011 /* gallery/Views/AddExpenseView.swift in Sources */,
+				B10000000000000000000011B /* gallery/Views/AddExpenseFormSections.swift in Sources */,
+				B10000000000000000000012 /* gallery/Views/TemplatePickerView.swift in Sources */,
+				B10000000000000000000013 /* gallery/Views/ExpenseRowView.swift in Sources */,
+				B10000000000000000000014 /* gallery/Views/ExpenseDetailsView.swift in Sources */,
+				B10000000000000000000015 /* gallery/Views/ConfigView.swift in Sources */,
+				B10000000000000000000016 /* gallery/Views/MetricCard.swift in Sources */,
+				B10000000000000000000017 /* gallery/Views/ExpensesUI.swift in Sources */,
+				B10000000000000000000018 /* gallery/Views/ReportsView.swift in Sources */,
+				B10000000000000000000019 /* gallery/Views/YearlyWrapUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		S00100000000000000000031 /* ShareExtension Sources */ = {
+		S00100000000000000000031 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				S00100000000000000000011 /* ShareViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-
-		S00100000000000000000032 /* ShareExtension Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				/* Resources intentionally left: no Info.plist or entitlements here */
+				S00100000000000000000011 /* ../ShareExtension/ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		S00100000000000000000071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = S00100000000000000000041 /* ExpensarShare */;
+			targetProxy = S00100000000000000000070 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F254EBAD2FCA92E600ACBAAA /* Debug */ = {
@@ -352,19 +358,6 @@
 			};
 			name = Debug;
 		};
-		S00100000000000000000061 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_BUNDLE_IDENTIFIER = com.netdots.gallery.share;
-				PRODUCT_NAME = ExpensarShare;
-				INFOPLIST_FILE = ShareExtension/Info.plist;
-				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
 		F254EBAE2FCA92E600ACBAAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,24 +412,12 @@
 			};
 			name = Release;
 		};
-		S00100000000000000000062 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_BUNDLE_IDENTIFIER = com.netdots.gallery.share;
-				PRODUCT_NAME = ExpensarShare;
-				INFOPLIST_FILE = ShareExtension/Info.plist;
-				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		F254EBB02FCA92E600ACBAAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Entitlements/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gallery/Preview Content\"";
@@ -445,6 +426,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = expensar;
 				INFOPLIST_KEY_CFBundleURLTypes = "[{CFBundleURLName=expensar.share;CFBundleURLSchemes=(expensar);} ]";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to attach bill photos.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to tag expenses with your current location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access for voice entry.";
@@ -465,7 +447,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				CODE_SIGN_ENTITLEMENTS = Entitlements/App.entitlements;
 			};
 			name = Debug;
 		};
@@ -474,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Entitlements/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gallery/Preview Content\"";
@@ -482,6 +464,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = expensar;
 				INFOPLIST_KEY_CFBundleURLTypes = "[{CFBundleURLName=expensar.share;CFBundleURLSchemes=(expensar);} ]";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to attach bill photos.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to tag expenses with your current location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access for voice entry.";
@@ -502,7 +485,32 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				CODE_SIGN_ENTITLEMENTS = Entitlements/App.entitlements;
+			};
+			name = Release;
+		};
+		S00100000000000000000061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netdots.gallery.share;
+				PRODUCT_NAME = ExpensarShare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		S00100000000000000000062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netdots.gallery.share;
+				PRODUCT_NAME = ExpensarShare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -518,20 +526,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		S00100000000000000000051 /* Build configuration list for PBXNativeTarget "ExpensarShare" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				S00100000000000000000061 /* Debug */,
-				S00100000000000000000062 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F254EBAF2FCA92E600ACBAAA /* Build configuration list for PBXNativeTarget "gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F254EBB02FCA92E600ACBAAA /* Debug */,
 				F254EBB12FCA92E600ACBAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		S00100000000000000000051 /* Build configuration list for PBXNativeTarget "ExpensarShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				S00100000000000000000061 /* Debug */,
+				S00100000000000000000062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
