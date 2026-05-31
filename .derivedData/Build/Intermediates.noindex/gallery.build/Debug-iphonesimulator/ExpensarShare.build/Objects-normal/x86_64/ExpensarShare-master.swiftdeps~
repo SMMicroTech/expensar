@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
-options: "c269375129f37f862e55daae437cb4654b49d036c54409865ff43cf607d7a94a"
-build_start_time: [1780157849, 485025882]
-build_end_time: [1780157849, 520925998]
-inputs:
-  "/Users/subhash/Documents/projects/gallery/gallery/ShareExtension/ShareViewController.swift": !private [1780157811, 991094112]

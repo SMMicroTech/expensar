@@ -1,0 +1,31 @@
+# Xcode
+DerivedData/
+.derivedData/
+build/
+
+# Xcode project user data
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.lock
+.idea/
+
+# Ignore index and logs
+Index.noindex/
+Logs/
