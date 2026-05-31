@@ -1,0 +1,20 @@
+{
+  "source": "/Users/subhash/Documents/projects/gallery/gallery/Views/ExpenseDetailsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Expense Details"
+      },
+      {
+        "comment": "",
+        "key": "Close"
+      },
+      {
+        "comment": "",
+        "key": "Receipt Image"
+      }
+    ]
+  },
+  "version": 1
+}

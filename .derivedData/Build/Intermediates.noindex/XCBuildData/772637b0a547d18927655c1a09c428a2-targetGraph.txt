@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+ExpensarShare in gallery, no dependencies
+gallery in gallery, depends on:
+ExpensarShare in gallery (explicit)

@@ -1,0 +1,36 @@
+{
+  "source": "/Users/subhash/Documents/projects/gallery/gallery/Views/ReportsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Reports"
+      },
+      {
+        "comment": "",
+        "key": "Range"
+      },
+      {
+        "comment": "",
+        "key": "Print/Share"
+      },
+      {
+        "comment": "",
+        "key": "Total: %@"
+      },
+      {
+        "comment": "",
+        "key": "No data for this range"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Amount"
+      }
+    ]
+  },
+  "version": 1
+}

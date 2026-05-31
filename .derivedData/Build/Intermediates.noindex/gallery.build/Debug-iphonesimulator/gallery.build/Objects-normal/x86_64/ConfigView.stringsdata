@@ -1,0 +1,160 @@
+{
+  "source": "/Users/subhash/Documents/projects/gallery/gallery/Views/ConfigView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Config"
+      },
+      {
+        "comment": "",
+        "key": "Complete authorization"
+      },
+      {
+        "comment": "",
+        "key": "Configuration"
+      },
+      {
+        "comment": "",
+        "key": "Sync Data DB"
+      },
+      {
+        "comment": "",
+        "key": "Dropbox"
+      },
+      {
+        "comment": "",
+        "key": "iCloud"
+      },
+      {
+        "comment": "",
+        "key": "Budget"
+      },
+      {
+        "comment": "",
+        "key": "Google Sheets"
+      },
+      {
+        "comment": "",
+        "key": "Currency"
+      },
+      {
+        "comment": "",
+        "key": "Current Sync Target"
+      },
+      {
+        "comment": "",
+        "key": "Default currency: LKR"
+      },
+      {
+        "comment": "",
+        "key": "Long press expense for details"
+      },
+      {
+        "comment": "",
+        "key": "Tap expense to open Maps"
+      },
+      {
+        "comment": "",
+        "key": "Disconnect Google Drive"
+      },
+      {
+        "comment": "",
+        "key": "Google Drive"
+      },
+      {
+        "comment": "",
+        "key": "Authorized"
+      },
+      {
+        "comment": "",
+        "key": "Not Authorized"
+      },
+      {
+        "comment": "",
+        "key": "Re-authorize"
+      },
+      {
+        "comment": "",
+        "key": "Authorize"
+      },
+      {
+        "comment": "",
+        "key": "Use for Sync"
+      },
+      {
+        "comment": "",
+        "key": "Disconnect Dropbox"
+      },
+      {
+        "comment": "",
+        "key": "Disconnect iCloud"
+      },
+      {
+        "comment": "",
+        "key": "Check iCloud Authorization"
+      },
+      {
+        "comment": "",
+        "key": "Save target"
+      },
+      {
+        "comment": "",
+        "key": "Monthly target"
+      },
+      {
+        "comment": "",
+        "key": "Amount"
+      },
+      {
+        "comment": "",
+        "key": "Google Apps Script webhook URL"
+      },
+      {
+        "comment": "",
+        "key": "Save Google Sheets URL"
+      },
+      {
+        "comment": "",
+        "key": "Send expenses to Google Sheets"
+      },
+      {
+        "comment": "",
+        "key": "Currency code"
+      },
+      {
+        "comment": "",
+        "key": "Save currency"
+      },
+      {
+        "comment": "",
+        "key": "Other..."
+      },
+      {
+        "comment": "",
+        "key": "Custom code"
+      },
+      {
+        "comment": "",
+        "key": "e.g. USD"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Mark as Authorized"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "After signing in on the provider page, tap Mark as Authorized."
+      }
+    ]
+  },
+  "version": 1
+}

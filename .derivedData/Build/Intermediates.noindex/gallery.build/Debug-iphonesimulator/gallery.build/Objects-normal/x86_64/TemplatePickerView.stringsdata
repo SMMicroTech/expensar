@@ -1,0 +1,28 @@
+{
+  "source": "/Users/subhash/Documents/projects/gallery/gallery/Views/TemplatePickerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Choose Template"
+      },
+      {
+        "comment": "",
+        "key": "No Templates Yet"
+      },
+      {
+        "comment": "",
+        "key": "Create a template by saving an expense with the 'Save as Template' option."
+      },
+      {
+        "comment": "",
+        "key": "Close"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
+      }
+    ]
+  },
+  "version": 1
+}

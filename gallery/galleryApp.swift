@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct galleryApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var store = ExpensesStore()
+    @StateObject private var syncSettings = SyncSettingsStore()
+    @StateObject private var budgetStore = BudgetStore()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(store)
+                .environmentObject(syncSettings)
+                .environmentObject(budgetStore)
         }
     }
 }

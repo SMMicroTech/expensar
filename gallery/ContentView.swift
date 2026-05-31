@@ -1,88 +1,104 @@
-//
-//  ContentView.swift
-//  gallery
-//
-//  Created by Subhash Sanjeewa on 2026-05-30.
-//
-
 import SwiftUI
-import CoreData
+import UIKit
+
+extension Notification.Name {
+    static let openAddExpenseFromSharedImage = Notification.Name("openAddExpenseFromSharedImage")
+    static let openAddExpenseFromSharePayload = Notification.Name("openAddExpenseFromSharePayload")
+}
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    @State private var selectedTab = 0
+    @State private var showYearWrapUp = false
+    @EnvironmentObject private var store: ExpensesStore
+    @EnvironmentObject private var budgetStore: BudgetStore
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
+        TabView(selection: $selectedTab) {
+            DashboardView()
+                .tag(0)
+                .tabItem {
+                    Label("Dashboard", systemImage: "chart.bar.xaxis")
                 }
-                .onDelete(perform: deleteItems)
+
+            ExpensesListView()
+                .tag(1)
+                .tabItem {
+                    Label("Expenses", systemImage: "wallet.pass.fill")
+                }
+
+            ReportsView()
+                .tag(2)
+                .tabItem {
+                    Label("Reports", systemImage: "printer")
+                }
+
+            ConfigView()
+                .tag(3)
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape")
+                }
+        }
+        .onOpenURL { url in
+            handleIncomingShareURL(url)
+        }
+        .onAppear {
+            store.refreshYearWrapUp()
+            showYearWrapUp = store.yearWrapUp != nil
+        }
+        .sheet(isPresented: $showYearWrapUp) {
+            if let wrapUp = store.yearWrapUp {
+                YearlyWrapUpView(wrapUp: wrapUp) {
+                    store.yearWrapUp = nil
+                    showYearWrapUp = false
+                }
+            } else {
+                EmptyView()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+    private func handleIncomingShareURL(_ url: URL) {
+        guard url.scheme?.lowercased() == "expensar" else { return }
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        var sharedImage: UIImage?
+        var sharedTitle: String?
+        var sharedText: String?
+        var sharedAmount: String?
+
+        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+
+        if let imagePath = components?.queryItems?.first(where: { $0.name == "imagePath" })?.value {
+            let decodedPath = imagePath.removingPercentEncoding ?? imagePath
+            sharedImage = UIImage(contentsOfFile: decodedPath)
+        } else if let imageFileURLValue = components?.queryItems?.first(where: { $0.name == "imageFileURL" })?.value,
+                  let fileURL = URL(string: imageFileURLValue),
+                  fileURL.isFileURL,
+                  let data = try? Data(contentsOf: fileURL) {
+            sharedImage = UIImage(data: data)
         }
-    }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+        sharedTitle = components?.queryItems?.first(where: { $0.name == "sharedTitle" })?.value
+        sharedText = components?.queryItems?.first(where: { $0.name == "sharedText" })?.value
+        sharedAmount = components?.queryItems?.first(where: { $0.name == "sharedAmount" })?.value
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+        NotificationCenter.default.post(
+            name: .openAddExpenseFromSharePayload,
+            object: nil,
+            userInfo: [
+                "image": sharedImage as Any,
+                "title": sharedTitle as Any,
+                "details": sharedText as Any,
+                "amount": sharedAmount as Any
+            ]
+        )
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .environmentObject(ExpensesStore())
+            .environmentObject(SyncSettingsStore())
+            .environmentObject(BudgetStore())
     }
 }

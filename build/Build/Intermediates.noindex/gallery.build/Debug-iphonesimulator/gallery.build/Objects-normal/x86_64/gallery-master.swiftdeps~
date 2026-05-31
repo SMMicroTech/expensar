@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "f23e13a91fc2d4607b1d6ca5c0f8076c4e628e0dc10fe7809785497448b6fcfb"
+build_start_time: [1780114274, 729809045]
+build_end_time: [1780114274, 766235828]
+inputs:
+  ? "/Users/subhash/Documents/projects/gallery/build/Build/Intermediates.noindex/gallery.build/Debug-iphonesimulator/gallery.build/DerivedSources/CoreDataGenerated/gallery/Item+CoreDataClass.swift"
+  : !private [1780114274, 660317897]
+  ? "/Users/subhash/Documents/projects/gallery/build/Build/Intermediates.noindex/gallery.build/Debug-iphonesimulator/gallery.build/DerivedSources/CoreDataGenerated/gallery/Item+CoreDataProperties.swift"
+  : !private [1780114274, 661242008]
+  ? "/Users/subhash/Documents/projects/gallery/build/Build/Intermediates.noindex/gallery.build/Debug-iphonesimulator/gallery.build/DerivedSources/CoreDataGenerated/gallery/gallery+CoreDataModel.swift"
+  : !private [1780114274, 656589031]
+  "/Users/subhash/Documents/projects/gallery/gallery/ContentView.swift": !private [1780112229, 546028137]
+  "/Users/subhash/Documents/projects/gallery/gallery/Persistence.swift": !private [1780112230, 888384342]
+  "/Users/subhash/Documents/projects/gallery/gallery/galleryApp.swift": !private [1780112229, 537811756]
