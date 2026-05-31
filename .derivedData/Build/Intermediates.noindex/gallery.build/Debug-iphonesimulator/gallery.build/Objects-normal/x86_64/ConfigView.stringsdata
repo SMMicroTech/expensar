@@ -44,6 +44,10 @@
       },
       {
         "comment": "",
+        "key": "Archives"
+      },
+      {
+        "comment": "",
         "key": "Default currency: LKR"
       },
       {
@@ -137,6 +141,18 @@
       {
         "comment": "",
         "key": "e.g. USD"
+      },
+      {
+        "comment": "",
+        "key": "No archived years yet"
+      },
+      {
+        "comment": "",
+        "key": "%lld Archive"
+      },
+      {
+        "comment": "",
+        "key": "%lld expenses"
       },
       {
         "comment": "",

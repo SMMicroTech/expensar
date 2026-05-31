@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "5f303cbfe6c59978c5cfb1ea9a52f634ddfab889883e0c8cb2426b15947e8b79"
-build_start_time: [1780197030, 809610843]
-build_end_time: [1780197030, 935693025]
+build_start_time: [1780197872, 76217174]
+build_end_time: [1780197879, 743780136]
 inputs:
   ? "/Users/subhash/Documents/projects/gallery/.derivedData/Build/Intermediates.noindex/gallery.build/Debug-iphonesimulator/gallery.build/DerivedSources/CoreDataGenerated/gallery/Item+CoreDataClass.swift"
   : [1780155697, 356175661]
@@ -9,14 +9,14 @@ inputs:
   : [1780155697, 358078718]
   ? "/Users/subhash/Documents/projects/gallery/.derivedData/Build/Intermediates.noindex/gallery.build/Debug-iphonesimulator/gallery.build/DerivedSources/CoreDataGenerated/gallery/gallery+CoreDataModel.swift"
   : [1780155697, 352231025]
-  "/Users/subhash/Documents/projects/gallery/gallery/AppCore.swift": !private [1780196938, 820966005]
+  "/Users/subhash/Documents/projects/gallery/gallery/AppCore.swift": [1780197838, 338612794]
   "/Users/subhash/Documents/projects/gallery/gallery/AppViews.swift": [1780170074, 77272415]
   "/Users/subhash/Documents/projects/gallery/gallery/ContentView.swift": [1780196731, 815435886]
   "/Users/subhash/Documents/projects/gallery/gallery/MLKitExpenseAssistant.swift": [1780167085, 498021364]
   "/Users/subhash/Documents/projects/gallery/gallery/Persistence.swift": [1780112230, 888384342]
   "/Users/subhash/Documents/projects/gallery/gallery/Views/AddExpenseFormSections.swift": [1780165874, 194864749]
   "/Users/subhash/Documents/projects/gallery/gallery/Views/AddExpenseView.swift": [1780164735, 932636022]
-  "/Users/subhash/Documents/projects/gallery/gallery/Views/ConfigView.swift": !private [1780196938, 820362567]
+  "/Users/subhash/Documents/projects/gallery/gallery/Views/ConfigView.swift": [1780196938, 820362567]
   "/Users/subhash/Documents/projects/gallery/gallery/Views/ExpenseDetailsView.swift": [1780172281, 655517578]
   "/Users/subhash/Documents/projects/gallery/gallery/Views/ExpenseRowView.swift": [1780172281, 655583381]
   "/Users/subhash/Documents/projects/gallery/gallery/Views/ExpensesUI.swift": [1780196729, 705002307]

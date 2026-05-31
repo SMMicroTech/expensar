@@ -124,7 +124,7 @@ final class ExpensesStore: ObservableObject {
         loadTemplates()
         loadTemplateUsage()
         loadArchives()
-        checkYearWrapUp()
+        archiveCompletedYearsIfNeeded()
     }
 
     func load() {
